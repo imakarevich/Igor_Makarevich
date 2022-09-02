@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+body{
+    font-size:15px;
+}
+.head{
+    text-align:right;
+    font-family:'Times New Roman', Times, serif;
+}
+.body{
+    font-family:'Bad Script', cursive;
+    text-indent: 1.5em
+}
+.i{
+    font-style:italic;
+}
+.b{
+    font-weight:bolder;
+}
+.u{
+    text-decoration:underline;
+}

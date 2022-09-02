@@ -1,0 +1,26 @@
+.background{
+    background-color: #dbdbdb;
+    margin-bottom: 0px;
+}
+.article{
+    background-color: #aaa;
+    margin-bottom: 0.2em;
+    margin-block-start: 0px;
+}
+.list{
+    background-color: #ccc;
+    float: left;
+    width: 15em;
+}
+.footer{
+    background-color: rgb(149, 148, 148);
+    clear:both;
+}
+.clear{
+    clear: both;
+}
+h5{
+    margin-block-start: 0px;
+    margin-block-end: 15px;
+    padding-top: 12px;
+}
