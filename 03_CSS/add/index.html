@@ -23,11 +23,10 @@
         div.MenuLevel2 {
             color: gray;
             width: 100px;
-            max-height:0px;
-            overflow:hidden;
-            -webkit-transition:max-height 0.4s linear;
-            -moz-transition:max-height 0.4s linear;
-            transition:max-height 0.4s linear;
+            /*display: none;*/
+            overflow: hidden;
+            max-height: 0px;
+            /*transition: 0.5s ease-out;*/
         }
         div.MenuLevel2 > div {
             background-color: rgb(240, 238, 238);
@@ -36,10 +35,11 @@
             border-radius: 3px;
         }
         div.MenuLevel1 > div:hover div.MenuLevel2 {
-            /*display: block;*/
+            display: block;
             position: absolute;
             z-index: 1;
-            max-height:300px;
+            max-height:100px;
+            transition: 0.5s ease-in;
         }
         div.MenuLevel1 > div:hover{
             background: gray;
@@ -48,7 +48,11 @@
         @media screen and (max-width: 630px) {
             div.MenuLevel1{
             width: 100px;
+
         }
+            div.MenuLevel2 {
+                margin: 0;
+            }
             div.MenuLevel1 > div:hover div.MenuLevel2 {
             left: 100%;
             top: 0%;
@@ -67,7 +71,7 @@
                 <div>Ужин</div>
             </div>
         </div>
-        <div class="inline">Вторник
+        <div>Вторник
             <div class="MenuLevel2">
                 <div>Завтрак</div>
                 <div>Обед</div>
