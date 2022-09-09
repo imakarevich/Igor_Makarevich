@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 ~ p{
+            border-style: solid;
+            border-width: 1px;
+            border-bottom-left-radius: 15px;
+            padding-bottom: 10px;
+            border-top-right-radius: 15px;
+            margin: 0;
+            border-color: gray;
+        }
+        h2 ~ p{
+            border-style: none;
+            padding-bottom: 0;
+        }
+        div{
+            display: inline;
+            right: 100px;
+        }
+        p span{
+            visibility: hidden;
+            position: absolute;
+        }
+        p:hover span{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+    <p>
+        .DOC или .doc (от англ. <img src="img/1.png"><a href="#">document</a>) — расширение имени файла, используемое для файлов, 
+        представляющих текст, с разметкой или без.
+        Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, 
+        однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <a href="#">Документ MS Word</a><img src="img/word.jfif"d>
+    </p>
+    <p>
+        Portable Document Format (<img src="img/1.png"><a href="#">PDF</a>) — межплатформенный открытый формат электронных документов, 
+        изначально разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.<br>
+        <a href="#">Документ PDF</a><img src="img/pdf.png">
+    </p>
+    <p>
+        ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <img src="img/1.png"><a href="#">.zip</a> и хранит 
+        в сжатом или несжатом виде один или несколько файлов,
+         которые можно из него извлечь путём распаковки с помощью специальной программы.<br>    
+        <a href="#">Архив</a><img src="img/zip.gif">
+    </p>
+    <h2>Этот список файлов</h2>
+    <p><img src="img/page.jfif"><a href="###">Документ MS Word</a><span><img src="img/word.jfif"></span></p>
+    <p><img src="img/page.jfif"><a href="###">Документ PDF</a><span><img src="img/pdf.png"></span></p>
+    <p><img src="img/page.jfif"><a href="###">Архив</a><span><img src="img/zip.gif"></span></p>
+</body>
+</html>
