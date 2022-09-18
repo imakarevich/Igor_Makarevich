@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 340px;
+        }
+        input[type="text"]{
+            margin-bottom: 2px;
+        }
+        button{
+            margin-top: 10px;
+        }
+        h1{
+            font-weight:bold;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <h1>Проверка пароля</h1>
+    <form action="#">
+        <fieldset>
+            <input type="text" id="fist">* Пароль
+            <input type="text" id="second">* Повторите пароль
+            <button type="submit">Отправить</button>
+        </fieldset>
+    </form>
+    <script>
+        $( "input" ).keypress(function() {
+            $( this ).css( "backgroundColor", "green");
+        });
+        
+    </script>
+</body>
+</html>
