@@ -25,16 +25,24 @@
     <h1>Проверка пароля</h1>
     <form action="#">
         <fieldset>
-            <input type="text" id="fist">* Пароль
+            <input type="text" id="first">* Пароль
             <input type="text" id="second">* Повторите пароль
             <button type="submit">Отправить</button>
         </fieldset>
     </form>
     <script>
-        $( "input" ).keypress(function() {
-            $( this ).css( "backgroundColor", "green");
+        $( "#first" ).keyup(function() {
+            $( "input" ).css( "backgroundColor", "green");
         });
-        
+        $( "#second" ).keyup(function(){
+            var pas1 = $( "#first" ).val();
+            var pas2 = $( this ).val();
+            if ( pas1!=pas2 ){
+                $( "input" ).css( "backgroundColor", "red");
+            }else{
+                $( "input" ).css( "backgroundColor", "green");
+            }
+        })        
     </script>
 </body>
 </html>
